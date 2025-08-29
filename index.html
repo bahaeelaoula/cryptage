@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carte Conceptuelle sur le Cryptage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .map {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        max-width: 1000px;
+      }
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+      .branch {
+        margin-top: 15px;
+        padding-left: 20px;
+      }
+      .branch h2 {
+        color: #2980b9; /* bleu pour concepts */
+      }
+      .branch.green h2 {
+        color: #27ae60; /* vert pour types */
+      }
+      .branch.orange h2 {
+        color: #e67e22; /* orange pour avantages */
+      }
+      ul {
+        list-style: none;
+        padding-left: 15px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      .example {
+        font-style: italic;
+        color: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="map">
+      <h1>Carte Conceptuelle sur le Cryptage</h1>
+
+      <div class="branch">
+        <h2>1. Cryptage (Encryption)</h2>
+        <p>
+          Définition : Processus de transformation des informations (texte,
+          fichiers, messages) afin qu’elles deviennent illisibles pour les
+          personnes non autorisées.
+        </p>
+      </div>
+
+      <div class="branch">
+        <h2>2. Concepts fondamentaux</h2>
+        <ul>
+          <li>
+            <strong>Texte en clair (Plaintext):</strong> Message original,
+            lisible.
+            <span class="example">Ex: "Bonjour, comment vas-tu ?"</span>
+          </li>
+          <li>
+            <strong>Texte crypté (Ciphertext):</strong> Message transformé,
+            illisible sans clé.
+            <span class="example">Ex: "Xjpfqz, krvmlq kxfw-xu ?"</span>
+          </li>
+          <li>
+            <strong>Clé de cryptage (Encryption Key):</strong> Valeur utilisée
+            pour transformer le texte en clair en texte crypté.
+            <span class="example">Ex: "123"</span>
+          </li>
+          <li>
+            <strong>Clé de décryptage (Decryption Key):</strong> Valeur utilisée
+            pour reconvertir le texte crypté en texte lisible.
+          </li>
+          <li>
+            <strong>Algorithme de cryptage (Encryption Algorithm):</strong>
+            Méthode mathématique pour transformer le texte en clair en texte
+            crypté. <span class="example">Ex: AES, RSA, DES</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="branch green">
+        <h2>3. Types de cryptage</h2>
+        <ul>
+          <li>
+            <strong>Cryptage symétrique:</strong> Même clé pour cryptage et
+            décryptage.
+            <span class="example"
+              >Ex: AES. Avantage: rapide, Inconvénient: clé doit être partagée
+              secrètement</span
+            >
+          </li>
+          <li>
+            <strong>Cryptage asymétrique:</strong> Clés différentes pour
+            cryptage et décryptage (clé publique et privée).
+            <span class="example"
+              >Ex: RSA. Avantage: clé publique peut être partagée, Inconvénient:
+              plus lent</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="branch orange">
+        <h2>4. Avantages du cryptage</h2>
+        <ul>
+          <li>
+            <strong>Confidentialité des données:</strong> Seuls les
+            destinataires autorisés peuvent lire les messages.
+            <span class="example">Ex: WhatsApp chiffré de bout en bout</span>
+          </li>
+          <li>
+            <strong>Intégrité des données:</strong> Garantit que le message n’a
+            pas été modifié.
+            <span class="example"
+              >Ex: vérification de fichiers téléchargés avec un hash</span
+            >
+          </li>
+          <li>
+            <strong>Authentification:</strong> Vérifie l’identité de l’émetteur
+            ou du destinataire.
+            <span class="example"
+              >Ex: connexion sécurisée avec certificats SSL</span
+            >
+          </li>
+          <li>
+            <strong>Non-répudiation:</strong> Empêche l’expéditeur de nier avoir
+            envoyé un message.
+            <span class="example"
+              >Ex: signatures numériques dans les emails</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
